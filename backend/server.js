@@ -8,12 +8,12 @@ import authRoutes from "./routes/auth.route.js";
 import userRoutes from "./routes/user.route.js";
 import postRoutes from "./routes/post.route.js";
 import notificationRoutes from "./routes/notification.route.js";
-import job from "./cron/cron.js";
+//import job from "./cron/cron.js";
 
 import connectMongoDB from "./db/connectMongoDB.js";
 
 dotenv.config();
-job.start();
+//job.start();
 
 cloudinary.config({
 	cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
